@@ -3,6 +3,12 @@ let accountName = "qaz";
 var accountEmail = "www.com";
 accountCity = "gujrat";
 
-accountId = 13333
+accountEmail = "abc.com";
+accountName = "iht";
+accountCity = "Lahore";
+
+// accountId = 13333
 console.log(accountId);
-console.log(accountName);
+console.table([accountEmail,accountName,accountCity]);
+
+//var is advised to not use bcz of its scope problem
