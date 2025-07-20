@@ -35,7 +35,33 @@ let myObj={
 } 
 
 const myFunction = function(){
-    console.log("hi world");
+    //console.log("hi world");
 }
 
-console.log(typeof myFunction);
+//console.log(typeof myFunction);
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+//Satck (Primitive), Heap (Non-Primitive)
+
+// in stack we got the copy of variable, in heap we got the reffernce of variables ..any changing in value will be changes in the heap
+
+let myYoutubeName = "qazal"
+
+let anotherName = myYoutubeName;
+anotherName = "zahra"
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    id: 23
+}
+let userTwo = userOne;
+userTwo.email = "qazal@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
